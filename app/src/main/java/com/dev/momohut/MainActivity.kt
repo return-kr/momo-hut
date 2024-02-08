@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.apply {
             onboardingViewPager.adapter = onBoardingAdapter
+            onboardingViewPager.isUserInputEnabled = false
         }
     }
 }
